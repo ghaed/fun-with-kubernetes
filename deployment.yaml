@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: game
 spec:
-  minReadySeconds: 15
+  minReadySeconds: 30
   selector:
     matchLabels:
       mylabelname: game
@@ -15,4 +15,4 @@ spec:
     spec:
       containers:
       - name: game
-        image: emailtovamos/game-repo:v01
+        image: mhaghaed/game-repo:v2
